@@ -1,8 +1,3 @@
-
-import {connect} from "react-redux"
-
-
-
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
@@ -18,10 +13,9 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-
-function NavBar(){
-    return(
-        <Disclosure as="nav" className="bg-gray-800">
+export default function Example() {
+  return (
+    <Disclosure as="nav" className="bg-gray-800">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -154,10 +148,6 @@ function NavBar(){
           </Disclosure.Panel>
         </>
       )}
-        </Disclosure>
-    )
+    </Disclosure>
+  )
 }
-
-const mapStateToProps=state=>({})
-
-export default connect(mapStateToProps,{})(NavBar)
