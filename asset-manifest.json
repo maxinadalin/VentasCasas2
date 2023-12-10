@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/https//maxinadalin.github.io/VentasCasas2/static/css/main.0c583915.css",
+    "main.js": "/https//maxinadalin.github.io/VentasCasas2/static/js/main.8a7a396d.js",
+    "static/media/logo.png": "/https//maxinadalin.github.io/VentasCasas2/static/media/logo.38d666c14a8032c3b17f.png",
+    "index.html": "/https//maxinadalin.github.io/VentasCasas2/index.html",
+    "main.0c583915.css.map": "/https//maxinadalin.github.io/VentasCasas2/static/css/main.0c583915.css.map",
+    "main.8a7a396d.js.map": "/https//maxinadalin.github.io/VentasCasas2/static/js/main.8a7a396d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0c583915.css",
+    "static/js/main.8a7a396d.js"
+  ]
+}
