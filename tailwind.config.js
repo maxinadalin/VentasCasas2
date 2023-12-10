@@ -6,12 +6,13 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'header': "url('../assets/img/Sin título.jpg')",
+        // 'header': "url('../assets/img/Sin título.jpg')",
       }
     },
   },
   plugins: [
     require('@tailwindcss/aspect-ratio'),
+    require('@tailwindcss/forms'),
   ],
 }
 

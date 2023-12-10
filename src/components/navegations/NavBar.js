@@ -1,6 +1,7 @@
 
 import {connect} from "react-redux"
 import logo from "assets/img/logo.png"
+import { Link } from "react-router-dom"
 
 
 
@@ -9,10 +10,10 @@ import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
-  { name: 'Categorias', href: '#', current: false },
-  { name: 'Sobre Nosotros', href: '#', current: false },
-  { name: 'Contacto', href: '#', current: false },
-  { name: 'Sucursales', href: '#', current: false },
+  { name: 'Categorias', href: '/Categorias', current: false },
+  { name: 'Sobre Nosotros', href: '/Sobre Nosotros', current: false },
+  { name: 'Contacto', href: '/Contacto', current: false },
+  { name: 'Sucursales', href: '/Sucursales', current: false },
 ]
 
 function classNames(...classes) {
@@ -40,13 +41,13 @@ function NavBar(){
                 </Disclosure.Button>
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-end">
-                <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                <Link to={'/'} className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                   <img
                     className="h-10 w-auto"
                     src= {logo}
                     alt="Your Company"
                   />
-                </div>
+                </Link>
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
