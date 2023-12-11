@@ -33,16 +33,17 @@ DJANGO_APPS = [
     'django.contrib.staticfiles',
 ]
 PROJECT_APPS = [
-    
+    "apps.Categorias",
+    "apps.Productos"
 ]
-c = [
+THIRD_PARTY_APPS = [
     'corsheaders',
     'rest_framework',
     'ckeditor',
     'ckeditor_uploader'
 ]
 
-INSTALLED_APPS = DJANGO_APPS + PROJECT_APPS + PROJECT_APPS
+INSTALLED_APPS = DJANGO_APPS + PROJECT_APPS + THIRD_PARTY_APPS
 
 
 CKEDITOR_CONFIGS = {
@@ -126,7 +127,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'es'
 
-TIME_ZONE = 'UTC-3'
+TIME_ZONE = 'America/Buenos_Aires'
 
 USE_I18N = True
 
