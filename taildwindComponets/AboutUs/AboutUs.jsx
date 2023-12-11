@@ -1,3 +1,5 @@
+
+const styleWord = "px-4 mb-10 text-base leading-7 text-gray-500 dark:text-gray-600"
 export default function Example() {
     return (
         <section class="py-10 lg:py-20 bg-stone-100 font-poppins dark:bg-gray-800">
